@@ -17,6 +17,29 @@ This repository contains the best model so far in format .h5, this model was val
 * Supports automatic segmentation of lymphocytes from a raw data
 * Build an API that handles the whole detection pipeline
 
+### Prediction pipeline:
+The following process is performed to detect and predict lymphocites in thin blood smears:
+* A tiling algorithm using a 3x3 grid with repetition with an offset, this results in 9 tiles per image without offset and other 9 tiles by translating the grid.
+* Screening each tile by using a classifier i.e predicting whether each tile is going to be fed to our object detection model or if it is discarded as it is not likely to contain any relevant WBC structure.
+* Detection of WBC structures by using our trained YoloV3 algorithm.
+* Classification of each detected bounding-box with a second classifier that distinguishes between lymphocites and leukoblasts.
+
+the following images illustrate the process:
+
+![image](./readme_images/1.png)
+YOLO detection for generated tiles at the first step of the proposed pipeline. Ground truth boxes are presented in black whereas detected boxes are displayed in green.
+
+![image](./readme_images/2.png)
+Grid offset benefit illustration: In this example detections are presented in red and cyan, where the red bounding boxes correspond to the original grid whereas the ones in cyan correspond to the grid with an offset.
+
+![image](./readme_images/3.png)
+This example illustrates a given detection with classification. Color codes are as follows: green corresponds to ground truth, yellow to WBC and red to Leukoblast
+
+![image](./readme_images/4.png)
+Detection performance statistics: This figure shows object detection performance across all subjects from the testing cohort.
+
+![image](./readme_images/5.png)
+Classification performance metrics.
 
 ### Contributing
 The main purpose of this repository is to continue evolving the Leukemia core, making it faster and easier to use. Development of the model happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving the solution.
