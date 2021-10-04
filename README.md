@@ -26,20 +26,21 @@ The following process is performed to detect and predict lymphocites in thin blo
 
 the following images illustrate the process:
 
-![image](./readme_images/1.png)
 YOLO detection for generated tiles at the first step of the proposed pipeline. Ground truth boxes are presented in black whereas detected boxes are displayed in green.
+![image](./readme_images/1.png)
 
-![image](./readme_images/2.png)
 Grid offset benefit illustration: In this example detections are presented in red and cyan, where the red bounding boxes correspond to the original grid whereas the ones in cyan correspond to the grid with an offset.
+![image](./readme_images/2.png)
 
-![image](./readme_images/3.png)
 This example illustrates a given detection with classification. Color codes are as follows: green corresponds to ground truth, yellow to WBC and red to Leukoblast
+![image](./readme_images/3.png)
 
-![image](./readme_images/4.png)
 Detection performance statistics: This figure shows object detection performance across all subjects from the testing cohort.
+![image](./readme_images/4.png)
 
-![image](./readme_images/5.png)
 Classification performance metrics.
+![image](./readme_images/5.png)
+
 
 ### Contributing
 The main purpose of this repository is to continue evolving the Leukemia core, making it faster and easier to use. Development of the model happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving the solution.
