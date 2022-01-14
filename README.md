@@ -11,6 +11,12 @@ This repository contains the best model so far in format .h5, this model was val
 * Specificity: 0.93
 * F1-macro: 0.93
 
+### TO RUN IT:
+
+* Access this collab: https://colab.research.google.com/github/arkangelai/leukemia-cell-classification/blob/main/Leukemia-classification-api-test_colab.ipynb
+* Choose one of our sample image or upload yours.
+* Get a prediction.
+
 ### New features:
 
 * Improved the precision metrics of the algorithm
