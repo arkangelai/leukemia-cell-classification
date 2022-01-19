@@ -19,9 +19,9 @@ This repository contains the best model so far in format .h5, this model was val
 
 ### New features:
 
-* Improved the precision metrics of the algorithm
-* Supports automatic segmentation of lymphocytes from a raw data
-* Build an API that handles the whole detection pipeline
+* Improved the precision metrics of the algorithm (done)
+* Supports automatic segmentation of lymphocytes from a raw data (done)
+* Build an API that handles the whole detection pipeline (done)
 
 ### Prediction pipeline:
 The following process is performed to detect and predict lymphocites in thin blood smears:
