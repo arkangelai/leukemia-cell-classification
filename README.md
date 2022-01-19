@@ -1,7 +1,7 @@
 # Leukemia Detection Algorithm
 This repository contains a model trained and API developed to detect Leukemia in children
 
-Training for this model was done using Arkangel AI's development tool 'Hippocrates' which trains different architectures and configurations to get the best possible performance out of a convolutional neural network for a given problem.
+Training for this model was done using Arkangel AI's development tool 'Hippocrates' which trains different architectures and configurations to get the best possible performance out of a convolutional neural network for a given problem. This repository contains models trained on a section of the dataset: https://www.kaggle.com/andrewmvd/leukemia-classification
 
 This repository contains the best model so far in format .h5, this model was validated under a hold out scheme by joining training and validation cohorts from the dataset and splitting this merged set into train, test and validation samples respectively. As a result, performance metrics for the test cohort are:
 
