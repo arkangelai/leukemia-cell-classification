@@ -9,7 +9,7 @@ This repository contains the best model so far in format .h5, this model was val
 * Area Under the ROC Curve: 0.98
 * Sensitivity: 0.95
 * Specificity: 0.93
-* F1-macro: 0.93
+* F1-macro: 0.93 
 
 ### TO RUN IT:
 
